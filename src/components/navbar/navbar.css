@@ -1,0 +1,229 @@
+.navbar {
+    margin: 0;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    
+}
+img {
+    width: 30px;
+    
+}
+#list{
+    position: relative;
+    width: 25px;
+    height: 20px;
+    display: none;
+}
+.intro{
+   height: 42px;
+   width: auto;
+ 
+}
+
+
+@keyframes moveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Adjust the distance it moves */
+    }
+}
+
+  .navbar .rightSide {
+   position: relative;
+    left: 60%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar a:hover {
+    color: #A2DA3A; /* Change the text color to a different color on hover */
+    text-decoration: underline; /* Underline the link on hover */
+    transition: color 0.3s, text-decoration 0.3s; /* Add a smooth transition effect */
+  }
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    font-weight:bolder;
+    cursor: pointer;
+  }
+.navbar a :hover{
+  color: wheat;  
+  cursor: pointer;
+}
+  
+  .navbar button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    width: 10px;
+   
+  }
+
+  
+  .navbar #open {
+    padding-left: 0px;
+  }
+  .navbar #open img {
+    display: none;   /*to hide the element from the layout */
+  }
+  
+  .navbar #close img {
+    display: inherit; /* is used to inherit the value of the display property from the parent */
+  }
+  
+  .navbar #open .hiddenLinks {
+    display: inherit;
+    margin-left: -17px;
+  }
+
+  .navbar #close .hiddenLinks {
+    display: none;
+  }
+  #list{
+    width: 20px;
+    height: 20px;
+  }
+  .navbar #open a {
+    width: 70px;
+   
+  }
+  #logo{
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
+    margin-left: 25px;
+  }
+  @media only screen and (max-width: 900px) {
+    .all{
+        height: 80px;
+    }
+    .navbar .rightSide a {
+      width: 70px;
+    }
+    .navbar .leftSide {
+      margin-left: 20px;
+    }
+    #list{
+        width: 30px;
+        height: 30px;
+      }
+    #imagee{
+        width: 200px;
+        margin-right: 10%;
+        margin-top: 20%;
+    }
+    .intro {
+        height: 350px;
+    }
+   
+  }
+  
+  @media (max-width: 768px) {
+    .close-button {
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: #fff; /* Change the color to your preference */
+       /* Change the background color to your preference */
+        padding: 5px 10px;
+        border-radius: 5px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+      
+      .close-button:hover {
+        background-color: #A2DA3A; /* Change the background color when hovering to your preference */
+      }
+    .navbar .leftSide {
+        flex: 50%;
+        display: grid;
+        grid-template-columns: auto;  
+       
+        align-items: center;
+        padding-left: 50px;
+        border-radius: 10%;
+       
+      }
+      .navbar .leftSide .hiddenLinks {
+        flex: 50%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        background-color:#1E1E1E;;
+        width: 32%;
+        padding-left: 40px;
+        z-index: 1;
+      }
+    
+    #list{
+        display: inherit;
+    }
+
+   
+    .navbar{
+        height: 60px;
+    }
+    .navbar .rightSide a {
+      display: none;
+                    /* hide the right side links when responsive */
+    }
+
+    .navbar .rightSide {
+      justify-content: flex-end;
+      padding-right: 50px;
+    }
+
+
+  
+    .navbar .rightSide button {
+      display: inherit;
+    }
+    
+    .navbar a {
+        color: white;
+        text-decoration: none;
+        margin: 20px;
+        font-weight:bolder;
+        font-size:smaller;
+      }
+      h1{
+        color: white;
+     
+       
+    }
+      #imagee{
+        width: 200px;
+        margin-left: 20%;
+        margin-top: 20%;
+    }
+    .intro {
+        height: 60px;
+        background-color: #1E1E1E;
+    }
+    .iteeeeeem1{
+        margin-left: 10%;
+        margin-top: 5%;
+        width: 30%;
+    }
+  }
+  
+  @media only screen and (min-width: 600px) {
+  
+    .hiddenLinks {
+      display: none;
+    }
+    .navbar{
+        background-color: #1E1E1E;;
+    }
+   
+  
+ 
+
+  }

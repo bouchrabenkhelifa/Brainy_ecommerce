@@ -1,0 +1,123 @@
+.itemm {
+    position: relative;
+    margin-top:50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px;
+    width: 70%;
+    left: 15%;
+   
+}
+
+.img{
+    width: 20px;
+    height: 20px;
+}
+.color1{
+    background-color: aqua;
+    width:40px;
+    height: 30px;
+    padding-left: 5px;
+    margin-left: 50px;
+    border-radius: 10px;
+    box-shadow: black;
+}
+.color2{
+    background-color: rgb(200, 255, 3);
+    width:40px;
+    height: 30px;
+    margin-left: 50px;
+    border-radius: 10px;
+    box-shadow: black;
+}
+.color3{
+    background-color: rgb(243, 38, 161);
+    width:40px;
+    height: 30px;
+    margin-left: 50px;
+    border-radius: 10px;
+    box-shadow: black;
+}
+.flexx{
+    display: flex;
+    
+}
+.item {
+    
+    display: grid;
+    grid-template-columns: auto auto ;
+}
+.flex1{
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.image{
+    width: 60%;
+    height: 85%;
+    border-radius: 20px;
+    box-shadow: black;
+ 
+}
+
+.M{
+    width: 30px;
+    height: 30px;
+    background-color: #D9D9D9;
+    margin-left: 50px;
+    border-radius: 10px;
+    padding-left: 12px;
+    padding-top: 5px;
+}
+.l{
+    width: 30px;
+    height: 30px;
+    background-color: #D9D9D9;
+    margin-left: 50px;
+    border-radius: 5px;
+    padding-left: 12px;
+    padding-top: 5px;
+    
+}
+.xl{
+    width: 30px;
+    height: 30px;
+    background-color: #D9D9D9;
+    margin-left: 50px;
+    border-radius: 5px;
+    padding-left: 12px;
+    padding-top: 5px;
+}
+.btn {
+    width: 80px;
+    height: 44px;
+    background-color:#1E1E1E;
+    border-radius: 9px;
+    color: white;
+    margin-top: 40px;
+}
+@media screen and (max-width: 768px) {
+.itemm {
+    margin-top:50px;
+    margin-left:25%;
+    display: grid;
+    grid-template-columns: auto;
+    width: 80%;
+    
+}
+
+}
+@media only screen and (max-width: 900px) {
+.itemm {
+        margin-top:50px;
+        margin-left:15%;
+        display: grid;
+        grid-template-columns: auto;
+        width: 80%;
+        
+    }
+.flexx{
+    margin-bottom: 12px;
+}
+    
+    }
